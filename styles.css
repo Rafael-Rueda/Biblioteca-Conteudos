@@ -1,34 +1,105 @@
-td, tr {
-    width: 100px;
-    max-width: 100px;
-    height: 80px;
-    max-height: 100px;
-    background-color: lightgray;
+nav#menu > ul { /* LISTA DE ITENS */
+    list-style-type: none;
+    text-indent: 5px;
+}
+
+nav#menu > ul > li { /* CADA ITEM */
+    position: relative;
+    display:block;
+    margin-bottom: 10px;
+    background-color: rgba(193, 229, 241, 0.822);
+    border-color: rgb(150, 204, 219);
+    border-width: 2px;
+    border-style:dashed;
+    cursor:pointer;
+    font-size: 16pt;
+    
+}
+
+nav#menu > ul > li:hover {
+    background-color: rgba(224, 255, 255, 0.329);
+    border-bottom-color: white;
+    text-shadow: 0px 0px 8px rgba(0, 140, 255, 0.527);
+    color: rgb(0, 0, 0);
+}
+
+nav#menu > ul > li:last-child {
+    margin-bottom: 0px;
+}
+
+nav.fechado { /* NAV INTEIRA FECHADA */
+    background-color: rgba(173, 216, 230, 0.822);
+    width: 20%;
+    height: 50em;
+    border-radius: 0% 5% 30% 0%;
+    min-width: 300px;
+    margin: -32px -8px;
+    z-index: 1;
+    position: fixed;
+    display: none;
+
+}
+
+nav.aberto { /* NAV INTEIRA ABERTA */
+    background-color: rgba(173, 216, 230, 0.822);
+    width: 20%;
+    height: 50em;
+    border-radius: 0% 5% 30% 0%;
+    min-width: 300px;
+    margin: -32px -8px;
+    z-index: 1;
+    position: fixed;
+    display: block;
+}
+
+h1.navtitle { /* H1 DO TÍTULO */
+    font-size: 28pt;
     text-align: center;
-    font-weight: bold;
-    border: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+    text-indent: 5px;
+    top: -16px;
 }
 
-div#resultado_calculadora {
-    background-color: lightgray;
-    width: 422px;
-    height: 200px;
-    font-size: 12pt;
-    text-align: right;
-    color: gray;
+span.openme {
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: lightcyan;
+    z-index: 2;
 }
 
-td:hover {
+span.openme:hover {
     cursor: pointer;
-    background-color: rgb(196, 196, 196);
-    border: 1px solid black;
 }
 
-div#userview_calculadora {
+span.openme > div.openbar { /* Barras do openme */
+    position:relative;
+    left: 10px;
+    top: 5px;
+    width: 20px;
+    margin-top: 5px;
+    height: 3px;
+    background-color: gray;
+}
+
+span.openme > div.openball { /* Bolinha do openme */
     position: absolute;
-    width: 422px;
-    height: 50px;
-    top: 157px;
-    text-align: right;  
-    font-size: 36pt;
+    left: -1px;
+    top: -6px;
+    width: 35px;
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 3px;
+    border-style: solid;
+}
+
+nav#menu > header { /* TÍTULO */
+    position: relative;
+    top: 10px;
+    text-indent: 48px;
 }

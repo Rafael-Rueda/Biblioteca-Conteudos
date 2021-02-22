@@ -4,51 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Menu Layout 01</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id = "userview_calculadora"> </div>
-    <div id="resultado_calculadora">0</div>
-    <table>
-        <tr> <!-- 1 LINHA -->
-            <td>&percnt;</td>
-            <td>CE</td>
-            <td>C</td>
-            <td>&lArr;</td>
-        </tr>
-        <tr> <!-- 2 LINHA -->
-            <td>1/x</td>
-            <td>x<sup>2</sup></td>
-            <td>&radic;</td>
-            <td>&divide;</td>
-        </tr>
-        <tr> <!-- 3 LINHA -->
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>&times;</td>
-        </tr>
-        <tr> <!-- 4 LINHA -->
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>-</td>
-        </tr>
-        <tr> <!-- 5 LINHA -->
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>+</td>
-        </tr>
-        <tr> <!-- 6 LINHA -->
-        <td>+/-</td>
-        <td>0</td>
-        <td>,</td>
-        <td>=</td>
-        </tr>
-    </table>
-    <script src="programacao_calculadora.js"></script>
-    <script src="reiniciar_calculadora.js"></script>
+<span class="openme" id="openme">
+    <div class="openbar"></div>
+    <div class="openbar"></div>
+    <div class="openbar"></div>
+    <div class="openball" id="openball"></div>
+</span>
+<nav class="fechado" id="menu">
+    <header>
+        <h1 class="navtitle">Meu site</h1>
+    </header>
+    <ul class = "navlista">
+        <li><img class = "navicon" alt = "" src= "imagens/hacker.png"/>Home</li>
+        <li><img class = "navicon" alt = "" src= "imagens/hacker.png"/>Aulas</li>
+        <li><img class = "navicon" alt = "" src= "imagens/hacker.png"/>Exercícios</li>
+        <li><img class = "navicon" alt = "" src= "imagens/hacker.png"/>Dicas Enem</li>
+        <li><img class = "navicon" alt = "" src= "imagens/hacker.png"/>Redação</li>
+    </ul>
+    <script src="LI Margin.js"></script>
+    <script src="openme.js"></script>
+</nav>
 </body>
 </html>
