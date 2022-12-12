@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <span id="abrir_calculadora">
+        <div onclick = 'fechar_calculadora_funcao()' class="fechar_calculadora" id = "fechar_calculadora"></div>
+        <div onclick = 'fechar_calculadora_funcao()' style="background-color: rgb(82, 0, 0); width: 12px; height: 2.5px; position: fixed; right:0; margin-right: 10px; margin-top: 6.5px; cursor:pointer;"></div>
+        <div onclick = 'abrir_calculadora_funcao()' id = "abrir_calculadora" class="abrir_calculadora"></div>
+        <div onclick = 'abrir_calculadora_funcao()' style="background-color: rgb(84, 104, 66); width: 12px; height: 2.5px; position: fixed; margin-top: 6.5px; margin-left: 9px; cursor:pointer;"></div>
+    </span>
+    <div id="calculadora">
+    <div id ="userview_calculadora"> </div>
+    <div id="resultado_calculadora">0</div>
+    <table>
+        <tr> <!-- 1 LINHA -->
+            <td>&percnt;</td>
+            <td>CE</td>
+            <td>C</td>
+            <td>&lArr;</td>
+        </tr>
+        <tr> <!-- 2 LINHA -->
+            <td>1/x</td>
+            <td>x<sup>2</sup></td>
+            <td>&radic;</td>
+            <td>&divide;</td>
+        </tr>
+        <tr> <!-- 3 LINHA -->
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>&times;</td>
+        </tr>
+        <tr> <!-- 4 LINHA -->
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>-</td>
+        </tr>
+        <tr> <!-- 5 LINHA -->
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>+</td>
+        </tr>
+        <tr> <!-- 6 LINHA -->
+        <td>+/-</td>
+        <td>0</td>
+        <td>,</td>
+        <td>=</td>
+        </tr>
+    </table>
+    <script src="programacao_calculadora.js"></script>
+    <script src="reiniciar_calculadora.js"></script>
+    </div>
+</body>
+</html>
