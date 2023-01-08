@@ -1,0 +1,33 @@
+nav {
+    grid-area: nav;
+    padding: 16px;
+    background-color: rgb(207, 255, 255);
+    position: relative;
+    width: 20vw;
+    height: 100vh;
+    border-right: 2px solid black;
+    display: block;
+    overflow-y: scroll;
+    min-width: 300px;
+    h1 {
+        margin: 24px 0 16px 0;
+        font-weight: bold;
+        font-size: 28px;
+        text-align: justify;
+        padding-bottom: 8px;
+        border-bottom: 4px solid black;
+    }
+    div.navdiv1 {
+        h2 {
+            padding: 8px;
+            margin-top: 8px;
+            font-size: 24px;
+            &:hover {
+                text-decoration: underline;
+                color: rgb(26, 58, 186);
+                font-weight: bolder;
+                cursor: pointer;
+            }
+        }
+    }
+}

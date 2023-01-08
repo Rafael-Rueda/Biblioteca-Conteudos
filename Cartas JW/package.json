@@ -1,0 +1,22 @@
+{
+  "name": "rest-api---github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael-Rueda/REST-API.git"
+  },
+  "author": "Rafael Rueda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafael-Rueda/REST-API/issues"
+  },
+  "homepage": "https://github.com/Rafael-Rueda/REST-API#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
