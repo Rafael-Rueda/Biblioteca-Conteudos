@@ -1,0 +1,65 @@
+nav.ml_m01a {
+  font-size: 24px;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  width: 350px;
+  height: 100vh;
+  transition: transform 0.5s;
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 0, rgba(0, 0, 0, 0.45) 270px, rgba(69, 69, 69, 0.5) 270px, rgba(69, 69, 69, 0.5) 100%);
+}
+nav.ml_m01a .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+nav.ml_m01a .header .button {
+  width: 45px;
+  height: 45px;
+  background-color: gray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav.ml_m01a .header .button > div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+nav.ml_m01a .header .button > div div {
+  width: 30px;
+  height: 5px;
+  transition: transform 0.5s, width 0.5s;
+  background-color: white;
+}
+nav.ml_m01a .header .button > div:nth-of-type(2) {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-color: transparent;
+}
+nav.ml_m01a .header .button:hover {
+  cursor: pointer;
+  background-color: rgb(170, 170, 170);
+  transition: background-color 0.5s;
+}
+nav.ml_m01a .header h1 {
+  margin: 16px;
+}
+nav.ml_m01a .main {
+  padding-top: 16px;
+}
+nav.ml_m01a .main ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav.ml_m01a .main ul li {
+  margin: 0px 16px 32px 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
