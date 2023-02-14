@@ -89,7 +89,8 @@ div.carta h1 {
   font-weight: bold;
 }
 div.carta p {
-  font-size: 24px;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 div.carta p span {
   color: rgb(26, 58, 186);
