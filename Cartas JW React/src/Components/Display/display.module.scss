@@ -1,0 +1,30 @@
+.display {
+    margin-top: 32px;
+    padding: 32px;
+    background-color: rgba(0, 255, 255, 0.188);
+
+    .content {
+        display: grid;
+        gap: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        h1 {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 36px;
+            word-spacing: 4px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        p {
+            font-size: 24px !important;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 250px auto;
+    transform: translate((-250px));
+    transition: .5s;
+}
+
+.navcontent {
+    display: inline-block;
+    background-color: rgb(102, 150, 218);
+    width: 250px;
+    min-height: 100lvh;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 60px;
+
+        background-color: rgb(50, 74, 107);
+        font-weight: bold;
+        color: white;
+
+        h1 {
+            font-size: 24px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+
+    .main {
+        padding: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            display: none;
+            text-indent: 16px;
+            font-size: 26px;
+
+            li {
+                padding: 8px;
+                color: white;
+
+                a {
+                    color: white;
+
+                    &:visited {
+                        color: white;
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+
+    background-color: rgb(34, 95, 130);
+
+    width: 60px;
+    height: 60px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        width: 30px;
+        height: 5px;
+
+        transition: .5s;
+
+        background-color: white;
+    }
+}

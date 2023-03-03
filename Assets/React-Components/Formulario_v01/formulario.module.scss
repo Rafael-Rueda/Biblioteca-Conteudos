@@ -1,0 +1,112 @@
+$cor: white;
+$cor2: rgb(206, 206, 206);
+$cor3: black;
+$cor4: rgb(165, 165, 165);
+
+.form {
+    display: grid;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-width: 500px;
+    max-width: 600px;
+    position: relative;
+
+    fieldset {
+        font-size: 32px;
+        color: $cor3;
+        background-color: $cor2;
+
+        border-radius: 10px 300px 10px 10px;
+
+        legend {
+            position: relative;
+            top: 16px;
+            padding: 8px;
+            box-shadow: inset black -4px -4px;
+
+            background-color: $cor;
+        }
+
+        div {
+            padding: 4px;
+            display: grid;
+            margin-top: 16px;
+            width: 80%;
+
+            position: relative;
+
+            label {
+                display: inline-block;
+
+                color: $cor3;
+                font-size: 24px;
+            }
+
+            input {
+                display: block;
+
+                padding: 8px;
+
+                font-size: 18px;
+                outline: none;
+                border: black solid 2px;
+                border-radius: 4px;
+                background-color: $cor;
+
+                // &:hover {
+                //     border-color: $cor;
+                //     box-shadow: $cor 0px 12px 16px -10px;
+                //     filter: blur();
+                // }
+
+                &::placeholder {
+                    color: $cor3;
+                }
+            }
+
+            p {
+                color: red;
+                font-size: 12px;
+                position: absolute;
+                right: 0;
+                display: none;
+            }
+        }
+    }
+
+    .botao {
+        margin-top: 32px;
+        height: 50px;
+        width: 80%;
+
+        box-shadow: 4px 4px black;
+        font-size: 32px;
+
+        background-color: $cor;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px black;
+        }
+    }
+}
+
+.part2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    z-index: -1;
+    background-color: $cor4;
+
+    right: -32px;
+    top: 16px;
+
+    border-radius: 100% 100% 100% 100%;
+    
+}
