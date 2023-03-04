@@ -9,22 +9,15 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
         h1 {
-            font-size: 34px;
+            font-size: 36px;
             font-weight: bold;
         }
 
         p {
-            font-size: 36px;
+            font-size: 24px;
             word-spacing: 4px;
 
         }
     }
 }
 
-@media screen and (max-width: 500px) {
-    .content {
-        p {
-            font-size: 24px !important;
-        }
-    }
-}
