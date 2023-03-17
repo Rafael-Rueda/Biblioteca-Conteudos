@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 import styles from './styles.module.scss'
+import logoimg from './Images/logo-empresas-iotti2.png'
+
 export default function Navbar_v01() {
     const navbar = useRef<HTMLElement>(null);
 
@@ -106,7 +108,7 @@ export default function Navbar_v01() {
     return (
         <nav ref={navbar} className={styles.navbar}>
             <div className={styles.logo}>
-                <img src="logo-empresas-iotti2.png" alt="Logo" />
+                <img src={logoimg} alt="Logo" />
             </div>
 
             <ul className={styles.ulfechado}>
