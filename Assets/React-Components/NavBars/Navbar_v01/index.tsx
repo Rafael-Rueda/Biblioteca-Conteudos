@@ -94,6 +94,13 @@ export default function Navbar_v01() {
 
         elemento.addEventListener('mouseleave', retrairel)
 
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 1138) {
+                elemento.removeEventListener('mouseover', expandirel)
+            } else {
+                elemento.addEventListener('mouseover', expandirel)
+            }
+        })
     }, [])
 
     return (
