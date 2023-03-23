@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    transition: .2s;
+    background-color: beige;
+    height: 60px;
+    transition: height 1s;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    position: relative;
+
+    ul {
+        margin: 0;
+        padding: 16px;
+
+        list-style-type: none;
+
+        display: flex;
+        gap: 0px;
+
+        grid-column: span 2;
+        grid-row: 1/1;
+        justify-content: center;
+
+        font-size: 24px;
+
+        transition: all .5s ease-in, height 0.01s ease-in-out;
+
+        h3 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 30px;
+            text-align: center;
+            margin-right: 0px;
+            transition: all .5s ease-in;
+
+            font-family: 'Lobster', cursive;
+            color: #777777;
+
+            transition: margin-right .5s ease-in-out;
+        }
+
+        p {
+            font-size: 20px;
+            margin-right: 0px;
+            transition: all .5s ease-in, color .1 ease-in-out;
+
+            transition: margin-right .5s ease-in-out;
+
+            color: #777777;
+
+            &:hover {
+                cursor: pointer;
+                color: #F5A623;
+            }
+        }
+
+    }
+}
+
+
+.conteudo {
+    text-align: center;
+    visibility: hidden;
+}
+
+.logo {
+    position: absolute;
+    transform: translateY(-100px) translateX(-50%);
+
+    opacity: 0;
+    transition: opacity .5s;
+    transition-delay: .5s;
+
+    margin: 0 50%;
+    padding-top: 8px;
+}
+
+
+//Javascript
+
+.conteudo {
+    opacity: 0;
+}
+
+.ul li>div {
+    height: 30px;
+}
+
+ul.ulfechado {
+    display: none;
+}
+
+
+ul.ulexpanded {
+    transform: translateY(60px);
+
+    gap: 60px;
+
+    h3 {
+        margin-right: 60px;
+    }
+
+    p {
+        margin-right: 60px;
+    }
+}
+
+.conteudovisivel {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+}
+
+.divlivisivel {
+    transition: height .5s ease-in-out;
+    height: 240px !important;
+    border-right: 2px solid #777777;
+}
+
+.logovisivel {
+    transform: translateY(0px) translateX(-50%);
+    opacity: 1;
+}
+
+.logoinvisivel {
+    opacity: 0;
+}
+
+.navbarexpanded {
+    height: 350px;
+    transition: height .5s ease-in-out;
+}
+
+.navbarcollapsed {
+    height: 60px;
+    transition: height .5s ease-in-out;
+}
+
+
+// Logo
+
+.imagemlogo {
+    grid-row: 1/1;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    transition: opacity .5s ease-in-out;
+
+    display: flex;
+
+    position: absolute;
+    margin-left: 24px;
+
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 24px;
+
+    img {
+        width: 60px;
+        align-self: center;
+    }
+
+    p {
+        align-self: baseline;
+        white-space: nowrap;
+        text-indent: -2px;
+        transform: translateY(-4px);
+        font-weight: bolder;
+    }
+}
+
+//Mobile
+
+.navbarmobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px){
+    .navbar {
+        ul {
+            justify-content: end;
+        }
+    }
+}
+
+@media screen and (max-width: 1138px) {
+
+    .imagemlogo {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbarmobile {
+        display: block;
+    }
+
+
+
+    .mobilelogo {
+        background-color: #fafacf;
+        margin: 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    .mobilecontent {
+        background-color: beige;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            list-style-type: none;
+
+            margin: 0;
+
+            li {
+                margin-right: 5%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        h3 {
+            font-family: 'Lobster', cursive;
+            color: #777777;
+            font-size: 28px;
+            font-weight: normal;
+
+            margin: 4px;
+
+            &:hover {
+                cursor: pointer;
+                color: #F5A623;
+            }
+        }
+    }
+
+    .mobileliconteudo {
+        position: absolute;
+        background-color: beige;
+        padding: 8px;
+        font-family: 'Poppins', sans-serif;
+        color: #777777;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        & p:hover {
+            cursor: pointer;
+            color:#F5A623;
+        }
+
+        transition: all .5s ease-in-out;
+    }
+
+    .mobileconteudoativo {
+        height: 150px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) { 
+    .mobilecontent {
+        ul {
+            li {
+                margin-right: 5%;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+}
