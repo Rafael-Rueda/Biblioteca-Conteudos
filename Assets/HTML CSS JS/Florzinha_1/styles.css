@@ -1,0 +1,221 @@
+#frame-id02 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame-id02 .core {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background-color: yellow;
+    z-index: 3;
+    box-shadow: inset -10px -10px 1px 0 rgba(0, 0, 0, 0.144);
+}
+
+#frame-id02 .corolla-l1 {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    z-index: 2;
+}
+
+@keyframes corolla_l1_spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+#frame-id02 .corolla-l1 .petal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100% 0 100% 0;
+    background-color: red;
+    box-shadow: -5px -5px 1px 0 rgba(0,0,0,0.06);
+}
+
+#frame-id02 .corolla-l1 .petal:nth-of-type(1) {
+    transform: rotate(45deg) translate(-25%, 25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(2) {
+    transform: rotate(0deg) translate(-25%, 25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(3) {
+    transform: rotate(90deg) translate(25%, -25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(4) {
+    transform: rotate(90deg) translate(-25%, 25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(5) {
+    transform: rotate(135deg) translate(25%, -25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(6) {
+    transform: rotate(135deg) translate(-25%, 25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(7) {
+    transform: rotate(180deg) translate(-25%, 25%);
+}
+#frame-id02 .corolla-l1 .petal:nth-of-type(8) {
+    transform: rotate(225deg) translate(-25%, 25%);
+}
+
+/* Keyframes for corolla-l1 petals */
+
+    @keyframes corolla_l1_petal_1 {
+        0% {
+            transform: rotate(45deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(45deg) translate(-75%, 75%);
+        }
+    }
+    @keyframes corolla_l1_petal_2 {
+        0% {
+            transform: rotate(0deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(0deg) translate(-75%, 75%);
+        }
+    }
+    @keyframes corolla_l1_petal_3 {
+        0% {
+            transform: rotate(90deg) translate(25%, -25%);
+        }
+        100% {
+            transform: rotate(90deg) translate(75%, -75%);
+        }
+    }
+    @keyframes corolla_l1_petal_4 {
+        0% {
+            transform: rotate(90deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(90deg) translate(-75%, 75%);
+        }
+    }
+    @keyframes corolla_l1_petal_5 {
+        0% {
+            transform: rotate(135deg) translate(25%, -25%);
+        }
+        100% {
+            transform: rotate(135deg) translate(75%, -75%);
+        }
+    }
+    @keyframes corolla_l1_petal_6 {
+        0% {
+            transform: rotate(135deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(135deg) translate(-75%, 75%);
+        }
+    }
+    @keyframes corolla_l1_petal_7 {
+        0% {
+            transform: rotate(180deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(180deg) translate(-75%, 75%);
+        }
+    }
+    @keyframes corolla_l1_petal_8 {
+        0% {
+            transform: rotate(225deg) translate(-25%, 25%);
+        }
+        100% {
+            transform: rotate(225deg) translate(-75%, 75%);
+        }
+    }
+
+#frame-id02 .corolla-l2 {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    z-index: 2;
+}
+
+#frame-id02 .corolla-l2 .petal {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    background-color: red;
+}
+
+#frame-id02 .corolla-l2 .petal:nth-of-type(1) {
+    transform: rotate(45deg) translate(-50%, 50%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(2) {
+    transform: rotate(0deg) translate(-75%, 100%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(3) {
+    transform: rotate(90deg) translate(175%, 0%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(4) {
+    transform: rotate(90deg) translate(-75%, -0%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(5) {
+    transform: rotate(135deg) translate(-125%, -25%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(6) {
+    transform: rotate(135deg) translate(-125%, -125%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(7) {
+    transform: rotate(180deg) translate(-175%, -100%);
+}
+#frame-id02 .corolla-l2 .petal:nth-of-type(8) {
+    transform: rotate(225deg) translate(-200%, -50%);
+}
+
+
+
+#frame-id02 .chalice {
+
+}
+
+#frame-id02 .sepal {
+    position: absolute;
+    background-color: green;
+    border-radius: 100px 0;
+    width: 10%;
+    height: 5%;
+    box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.11);
+}
+
+#frame-id02 .sepal:nth-of-type(1) {
+    transform: translate(-125%, 350%);
+}
+#frame-id02 .sepal:nth-of-type(2) {
+    transform: translate(25%, 350%) scaleX(-1);
+}
+
+#frame-id02 .peduncle {
+    position: absolute;
+    transform: translate(0, 50%);
+    width: 5%;
+    height: 50%;
+    background-color: green;
+    z-index: 1;
+}
+
+/* Mudar as cores das petalas, EXEMPLO: */
+
+/* .red > * {
+    background-color: red !important;
+}
+
+.purple > * {
+    background-color: purple !important;
+}
+
+.yellow > * {
+    background-color: lightgoldenrodyellow !important;
+} */

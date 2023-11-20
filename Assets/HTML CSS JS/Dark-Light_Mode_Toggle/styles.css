@@ -1,13 +1,50 @@
-.frame {
-    width: 600px;
-    height: 600px;
-    background-color: grey;
+:root {
+    --frame-width: 60px;
+    --frame-height: 60px;
+}
+
+#frame-id01 {
+    width: var(--frame-width);
+    height: var(--frame-height);
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 
-.circle {
+#frame-id01 .flash {
+    display: none;
+    position: absolute;
+    width: var(--frame-width);
+    height: var(--frame-height);
+    background-color: transparent;
+    border: 8px solid white;
+    border-radius: 100%;
+}
+
+@keyframes flash {
+    0% {
+        width: var(--frame-width);
+        height: var(--frame-height);
+    }
+    100% {
+        width: 250%;
+        height: 250%;
+    }
+}
+
+@keyframes flash_reverse {
+    0% {
+        width: 250%;
+        height: 250%;
+    }
+    100% {
+        width: var(--frame-width);
+        height: var(--frame-height);
+    }
+}
+
+#frame-id01 .circle {
     position: relative;
     background: #000;
     width:90%;
@@ -16,19 +53,19 @@
     overflow: hidden;
 }
 
-.sky {
+#frame-id01 .sky {
     width: 100%;
     height: 65%;
     background-color: skyblue;
     transition: background-color .5s
 }
 
-.sun {
+#frame-id01 .sun {
     position: absolute;
     top: 20%;
     left: 20%;
-    width: 40px;
-    height: 40px;
+    width: 7%;
+    height: 7%;
     background-color: yellow;
     border-radius: 100%;
 }
@@ -36,63 +73,63 @@
 
 /* RAYS */
 
-.rays {
+#frame-id01 .rays {
     position: absolute;
     left: 20%;
     top: 20%;
-    width: 40px;
-    height: 40px;
+    width: 7%;
+    height: 7%;
 }
 
-.ray {
+#frame-id01 .ray {
     display: block;
     position: absolute;
-    width: 15px;
-    height: 5px;
+    width: 5.5%;
+    height: 10%;
     background-color: yellow;
     animation: rays_animation .5s ease-in-out alternate infinite;
 }
 
-.ray1 {
-    transform: translate(-10px, -7px) rotate(50deg);
+#frame-id01 .ray1 {
+    transform: translate(-75%, -200%) rotate(50deg);
 }
-.ray2 {
-    transform: translate(-20px, 25px) rotate(-15deg);
+#frame-id01 .ray2 {
+    transform: translate(-150%, 700%) rotate(-15deg);
 }
-.ray3 {
-    transform: translate(20px, -15px) rotate(90deg);
+#frame-id01 .ray3 {
+    transform: translate(200%, -350%) rotate(90deg);
 }
-.ray4 {
-    transform: translate(36px, 40px) rotate(45deg);
+#frame-id01 .ray4 {
+    transform: translate(300%, 1000%) rotate(45deg);
 }
-.ray5 {
-    transform: translate(7px, 50px) rotate(90deg);
+#frame-id01 .ray5 {
+    transform: translate(50%, 1250%) rotate(90deg);
 }
-.ray6 {
-    transform: translate(45px, 10px) rotate(0deg);
+#frame-id01 .ray6 {
+    transform: translate(400%, 250%) rotate(0deg);
 }
 
 @keyframes rays_animation {
     0% {
-        width: 15px;
+        width: 30%;
     }
 
     100% {
-        width: 10px;
+        width: 25%;
     }
 }
 
-.moon {
+#frame-id01 .moon {
     position: absolute;
     top: 20%;
     left: 20%;
-    width: 40px;
-    height: 40px;
+    width: 7%;
+    height: 7%;
     background-color: aliceblue;
     border-radius: 100%;
 }
 
-.ground {
+#frame-id01 .ground {
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -101,7 +138,7 @@
     transition: background-color .5s
 }
 
-.circle_sun {
+#frame-id01 .circle_sun {
     transform: rotate(45deg);
     position: absolute;
     width: 100%;
@@ -109,7 +146,7 @@
     background-color: transparent;
 }
 
-.circle_moon {
+#frame-id01 .circle_moon {
     transform: rotate(-90deg);
     position: absolute;
     width: 100%;
