@@ -8,7 +8,9 @@ body {
     align-items: center;
     padding: 0;
     transition: height .5s;
-    background-color: rgba(245, 245, 245, 0.76);
+    background-image: url('../images/cloudop06.png');
+    background-position: -50px;
+    background-size: 96px;
 }
 
 /* ----------- */
@@ -30,7 +32,7 @@ body {
 .notdisplayed {
     visibility: hidden;
     opacity: 0;
-    height: 0;
+    height: 0 !important;
 }
 
 /* ----------- */
@@ -38,7 +40,7 @@ body {
 .navbarv02 h3 {
     margin: 0;
     padding: 0;
-    font-size: 32px;
+    font-size: 24px;
     align-self: center;
     cursor: pointer;
 }
@@ -46,10 +48,13 @@ body {
 .navbarv02 ul {
     list-style-type: none;
     display: flex;
-    gap: 128px;
+    justify-content: center;
+    gap: 32px;
     padding: 0;
     margin: 0;
     transition: height .5s;
+    
+    padding: 0 128px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -72,11 +77,21 @@ body {
         height: 0px;
     }
 
+    .expanded li {
+        margin: 0 !important;
+    }
+
 }
 
 .navbarv02 li {
     display: grid;
     align-content: center;
+    margin-right: 0px;
+    transition: margin .5s;
+}
+
+.expanded li {
+    margin: 0 32px;
 }
 
 .item {
@@ -85,7 +100,7 @@ body {
 
 .content {
     transition: height .5s;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .content p {
@@ -96,7 +111,7 @@ body {
 }
 
 .separate {
-    width: 4px;
+    width: 2px;
     background-color: black;
     height: 200px;
     align-self: center;
@@ -104,6 +119,8 @@ body {
     padding: 0;
 
     display: grid;
+    transition-property: height, opacity; 
+    transition-duration: .5s; 
 }
 
 .separate span {
@@ -111,7 +128,7 @@ body {
     position: absolute;
     align-self: center;
     width: 24px;
-    height: 4px;
+    height: 2px;
     transform: rotate(-45deg) translate(-55%);
 }
 
@@ -132,6 +149,8 @@ body {
     border-radius: 50%;
     width: 128px;
     height: auto !important;
+    display: grid;
+    align-items: center;
 }
 
 .logo {

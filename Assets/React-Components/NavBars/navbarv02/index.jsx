@@ -11,7 +11,7 @@ export function Navbarv02() {
         function handleScroll() {
             const scrollPosition = document.documentElement.scrollTop || window.scrollY;
 
-            if (scrollPosition >= 120) {
+            if (scrollPosition >= 60) {
                 setBottomNav(true);
             } else {
                 setBottomNav(false);
@@ -72,7 +72,7 @@ export function Navbarv02() {
                         <div className={styles.item}>
                             <h3>Contact</h3>
                             <div className={`${styles.content} ${displayed ? styles.displayed : styles.notdisplayed}`}>
-                                <p></p>
+                                <p>Mail</p>
                                 <p></p>
                                 <p></p>
                                 <p></p>
