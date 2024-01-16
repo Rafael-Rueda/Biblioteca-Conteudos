@@ -1,0 +1,154 @@
+body {
+    background-color: aqua;
+}
+
+.navbarv02 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: height .5s;
+    background-color: rgba(245, 245, 245, 0.76);
+}
+
+/* ----------- */
+
+.expanded {
+    height: 300px;
+}
+
+.collapsed {
+    height: 60px;
+}
+
+.displayed {
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+}
+
+.notdisplayed {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+/* ----------- */
+
+.navbarv02 h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbarv02 ul {
+    list-style-type: none;
+    display: flex;
+    gap: 128px;
+    padding: 0;
+    margin: 0;
+    transition: height .5s;
+}
+
+@media screen and (max-width: 1400px) {
+    .navbarv02 ul {
+        gap: 128px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbarv02 ul {
+        gap: 32px;
+    }
+
+    .expanded {
+        height: 120px;
+    }
+    .displayed {
+        visibility: hidden;
+        opacity: 0;
+        height: 0px;
+    }
+
+}
+
+.navbarv02 li {
+    display: grid;
+    align-content: center;
+}
+
+.item {
+    display: grid;
+}
+
+.content {
+    transition: height .5s;
+    font-size: 24px;
+}
+
+.content p {
+    margin: 0;
+    margin-top: 16px;
+
+    cursor: pointer;
+}
+
+.separate {
+    width: 4px;
+    background-color: black;
+    height: 200px;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+}
+
+.separate span {
+    background-color: black;
+    position: absolute;
+    align-self: center;
+    width: 24px;
+    height: 4px;
+    transform: rotate(-45deg) translate(-55%);
+}
+
+.separate span:nth-of-type(1) {
+    margin-bottom: 24px;
+}
+
+.separate span:nth-of-type(2) {
+    margin-top: 0px;
+}
+
+.navbarv02 h3:hover, .navbarv02 p:hover {
+    color: white;
+}
+
+.logodiv {
+    position: absolute;
+    border-radius: 50%;
+    width: 128px;
+    height: auto !important;
+}
+
+.logo {
+    width: 96px;
+}
+
+.backtotop {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.76);
+    width: 100%;
+}

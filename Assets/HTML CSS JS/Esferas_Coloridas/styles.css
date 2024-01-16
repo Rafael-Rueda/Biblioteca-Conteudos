@@ -1,0 +1,96 @@
+.frame-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(120deg, #ff22002c, #e81d1d2c, #e8b91d2c, #e5e81d2c, #1de83f2c, #1ddee82c, #2b1de82c, #df00f32c, #df00f32c);
+    background-size: 500% 500%;
+    animation: body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box;
+}
+
+@keyframes body-animation {
+    0%{background-position:0% 0%}
+    
+    100%{background-position:100% 100%}
+}
+
+.circle:nth-child(1) {
+    transform: rotate(180deg);
+    transform-origin: 95% 95%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box;
+}
+.circle:nth-child(2) {
+    transform: rotate(180deg);
+    transform-origin: 10% 35%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box;
+}
+.circle:nth-child(3) {
+    transform: rotate(180deg);
+    transform-origin: 30% 95%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(4) {
+    transform: rotate(180deg);
+    transform-origin: 70% 0%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(5) {
+    transform: rotate(180deg);
+    transform-origin: 120% 40%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(6) {
+    transform: rotate(180deg);
+    transform-origin: 30% 0%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(7) {
+    transform: rotate(180deg);
+    transform-origin: 125% 70%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(8) {
+    transform: rotate(180deg);
+    transform-origin: 0% 70%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(9) {
+    transform: rotate(180deg);
+    transform-origin: 65% 105%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+.circle:nth-child(10) {
+    transform: rotate(180deg);
+    transform-origin: 100% 10%;
+    animation: rotate_circle 8s alternate infinite ease-in-out, body-animation infinite alternate ease-in-out 5s forwards;
+    background-clip: content-box; 
+}
+
+/* @keyframes rotate_circle {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+} */
