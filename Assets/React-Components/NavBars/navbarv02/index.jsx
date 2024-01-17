@@ -16,9 +16,9 @@ export function Navbarv02() {
             } else {
                 setBottomNav(false);
             }
-        }
+        };
 
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -28,14 +28,15 @@ export function Navbarv02() {
 
     return (
         <>
-            <nav onMouseLeave={
-                () => { setExpanded((prev) => false); setDisplayed((prev) => false); }
-            }
+            <nav
+                onMouseLeave={
+                    () => { setExpanded((prev) => false); setDisplayed((prev) => false); }
+                }
                 onMouseEnter={
                     () => { setExpanded((prev) => true); setDisplayed((prev) => true); }
                 }
                 className={`${styles.navbarv02} ${expanded ? styles.expanded : styles.collapsed}`}
-            >   
+            >
                 <div className={`${styles.logodiv} ${!displayed ? styles.displayed : styles.notdisplayed}`}>
                     <img className={`${styles.logo}`} src={logo} alt="Logo" />
                 </div>
@@ -82,7 +83,7 @@ export function Navbarv02() {
                 </ul>
             </nav>
 
-            {bottomNav ? <p onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'});}} className={styles.backtotop}>Back to top</p> : ''}
+            {bottomNav ? <p onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={styles.backtotop}>Back to top</p> : ''}
         </>
     )
 }

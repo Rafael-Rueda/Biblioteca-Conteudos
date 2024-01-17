@@ -1,16 +1,21 @@
 body {
-    background-color: aqua;
+    background-color: skyblue;
 }
 
 .navbarv02 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
     display: grid;
     justify-content: center;
     align-items: center;
     padding: 0;
     transition: height .5s;
-    background-image: url('../images/cloudop06.png');
+    /* background-image: url('../images/cloudop06.png');
     background-position: -50px;
-    background-size: 96px;
+    background-size: 96px; */
+    background-color: rgba(245, 245, 245, 0.2);
 }
 
 /* ----------- */
@@ -59,7 +64,7 @@ body {
 
 @media screen and (max-width: 1400px) {
     .navbarv02 ul {
-        gap: 128px;
+        gap: 32px;
     }
 }
 
@@ -69,7 +74,7 @@ body {
     }
 
     .expanded {
-        height: 120px;
+        height: 60px;
     }
     .displayed {
         visibility: hidden;
@@ -141,7 +146,8 @@ body {
 }
 
 .navbarv02 h3:hover, .navbarv02 p:hover {
-    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 .logodiv {
