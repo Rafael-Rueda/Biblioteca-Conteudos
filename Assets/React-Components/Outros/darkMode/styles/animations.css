@@ -1,0 +1,78 @@
+:root {
+    --frame-width: 60px;
+    --frame-height: 60px;
+}
+
+@keyframes flash {
+    0% {
+        width: var(--frame-width);
+        height: var(--frame-height);
+    }
+    100% {
+        width: 5000px;
+        height: 5000px;
+    }
+}
+
+@keyframes flash_reverse {
+    0% {
+        width: 5000px;
+        height: 5000px;
+    }
+    100% {
+        width: var(--frame-width);
+        height: var(--frame-height);
+    }
+}
+
+@keyframes rays_animation {
+    0% {
+        width: 30%;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes cicle_sun {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes cicle_sun_reverse {
+    0% {
+        transform: rotate(180deg);
+        display: block;
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes cicle_moon {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes cicle_moon_reverse {
+    0% {
+        transform: rotate(45deg);
+        display: block;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}

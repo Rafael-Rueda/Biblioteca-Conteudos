@@ -1,10 +1,10 @@
-$frame = document.getElementById('frame-id01') 
-$circle = $frame.firstElementChild
-$sun = $circle.firstElementChild
-$moon = $sun.nextElementSibling
-$sky = $moon.nextElementSibling
-$ground = $sky.nextElementSibling
-$flash = $circle.nextElementSibling
+const $frame = document.getElementById('frame-id01') 
+const $circle = $frame.firstElementChild
+const $sun = $circle.firstElementChild
+const $moon = $sun.nextElementSibling
+const $sky = $moon.nextElementSibling
+const $ground = $sky.nextElementSibling
+const $flash = $circle.nextElementSibling
 
 function $day() {
     $sun.style.animation = 'cicle_sun_reverse .5s ease-in-out forwards'
