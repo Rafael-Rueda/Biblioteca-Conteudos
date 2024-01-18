@@ -7,8 +7,6 @@ export function Clouds() {
     useEffect(() => {
         const $cloud1 = document.getElementById('cloud__01__svg');
         const $cloud2 = document.getElementById('cloud__02__svg');
-        // const $cloud3 = document.getElementById('cloud__03__svg');
-        // const $cloud4 = document.getElementById('cloud__04__svg');
 
         function getCurrentTranslate(el) {
             const computedStyle = window.getComputedStyle(el);
@@ -28,12 +26,15 @@ export function Clouds() {
             let [currentX, currentY] = getCurrentTranslate(el);
 
             if (position < 408 && position > -380) {
-                el.style.transition = 'transform 0.7s ease';
-                el.style.transform = `translate(${window.innerWidth > 1300 ? (lr === 'left' ? -150 : 150) : (lr === 'left' ? -250 : 250)}px, ${currentY}px)`;
+                el.style.transition = 'transform 1s ease';
+                el.style.transform = `translate(${window.innerWidth > 1300 ? (lr === 'left' ? -300 : 475) : (lr === 'left' ? -500 : 500)}px, ${currentY}px)`;
             } else {
-                el.style.transition = 'transform 0.7s ease';
-                el.style.transform = `translate(0px, ${currentY}px)`;
-                // el.style.transform = `translate(24.2px, ${currentY}px)`;
+                el.style.transition = 'transform 1s ease';
+                
+                lr === 'right' ?
+                el.style.transform = `translate(161.815px, ${currentY}px)` :
+                el.style.transform = `translate(-1.662px, ${currentY}px)`;
+                
             };
         };
 
@@ -54,14 +55,10 @@ export function Clouds() {
             // window.requestAnimationFrame(() => {
             //     elementCalc($cloud1, 'left');
             //     elementCalc($cloud2, 'right');
-            //     elementCalc($cloud3, 'left');
-            //     elementCalc($cloud4, 'right');
             // });
 
             elementCalc($cloud1, 'left');
             elementCalc($cloud2, 'right');
-            // elementCalc($cloud3, 'left');
-            // elementCalc($cloud4, 'right');
         };
 
         window.addEventListener('scroll', handleScroll);
