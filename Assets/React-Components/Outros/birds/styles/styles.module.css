@@ -1,0 +1,44 @@
+.birds {
+    position: absolute;
+    top: 80%;
+    animation: birds_fly 10s ease-in-out infinite alternate;
+    width: 100%;
+}
+
+.birds svg:nth-of-type(1) {
+    transform: translate(0, 80px);
+}
+.birds svg:nth-of-type(2) {
+    transform: translate(0, 16px);
+}
+.birds svg:nth-of-type(3) {
+    transform: translate(0, 120px);
+}
+.birds svg:nth-of-type(4) {
+    transform: translate(0, 60px);
+}
+.birds svg:nth-of-type(5) {
+    transform: translate(0, 100px);
+}
+.birds svg:nth-of-type(6) {
+    transform: translate(0, 140px);
+}
+.birds svg:nth-of-type(7) {
+    transform: translate(0, 40px);
+}
+
+.birds svg {
+    width: 3%;
+    height: 100%;
+}
+
+@keyframes birds_fly {
+    0% {
+        top: 80%;
+        left: -50%;
+    }
+    100% {
+        top: 0%;
+        left: 150%;
+    }
+}

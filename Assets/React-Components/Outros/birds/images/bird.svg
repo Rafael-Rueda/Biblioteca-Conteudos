@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="792.196" height="599.836" version="1.1" viewBox="0 0 209.602 158.707">
+   <g fill="#181818" fillOpacity="1" stroke="#000" strokeDasharray="none" strokeLinecap="round" strokeLinejoin="round"
+      strokeOpacity="1" strokeWidth="0.411" transform="translate(-.4 -139.053)">
+      <path d="M106.403 253.071L.605 139.258 104.8 297.153z">
+         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+            values="0 106.403 253.071; -30 106.403 253.071; 0 106.403 253.071" dur="0.5s" begin="0s"
+            repeatCount="indefinite" />
+      </path>
+      <path d="M106.002 252.27l103.794-113.012L105.2 297.554z">
+         <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+            values="0 106.002 252.27; 30 106.002 252.27; 0 106.002 252.27" keyTimes="0; 0.5; 1" dur="0.5s"
+            repeatCount="indefinite" />
+      </path>
+   </g>
+</svg>
