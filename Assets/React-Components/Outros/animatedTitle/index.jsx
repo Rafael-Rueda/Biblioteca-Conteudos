@@ -1,13 +1,11 @@
 import P from 'prop-types';
 import styles from './styles/styles.module.css';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function AnimatedTitle({ headings, tag }) {
 
     const [title, setTitle] = useState(headings[0]);
     const [headingComponent, setHeadingComponent] = useState(null);
-
-    const [firstRepetition, setFirstRepetition] = useState(true);
 
     useEffect(() => {
         switch (tag) {
@@ -44,7 +42,7 @@ export function AnimatedTitle({ headings, tag }) {
         }, 5000)
 
         return () => clearInterval(intervalId);
-    }, [headings, firstRepetition]);
+    }, [headings]);
 
     return (
         <>
