@@ -25,13 +25,13 @@
 }
 
 .ball:nth-of-type(2) {
-    transform: translate(-50%, 220px);
+    transform: translate(-50%, 245px);
 }
 
 .ball:nth-of-type(3) {
-    transform: translate(-50%, 370px);
+    transform: translate(-50%, 420px);
 }
 
 .ball:nth-of-type(4) {
-    transform: translate(-50%, 600px);
+    transform: translate(-50%, 685px);
 }
